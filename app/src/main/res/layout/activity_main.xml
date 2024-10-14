@@ -11,14 +11,27 @@
         android:id="@+id/etNumero"
         android:layout_width="161dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="92dp"
         android:ems="10"
         android:hint="@string/Numero"
-        android:importantForAutofill="no"
         android:inputType="number"
         android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/btnConcluir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNome" />
+
+    <Button
+        android:id="@+id/btnConcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="@string/Exibir"
+        app:layout_constraintBottom_toTopOf="@+id/tvRes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumero" />
 
     <TextView
         android:id="@+id/tvNome"
@@ -39,5 +52,6 @@
         android:layout_marginBottom="264dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConcluir" />
 </androidx.constraintlayout.widget.ConstraintLayout>
